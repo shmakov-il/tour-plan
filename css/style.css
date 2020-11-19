@@ -523,8 +523,18 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
-    width: 87%;
+    max-width: 700px;
+    width: 100%;
+  }
+  .navbar-bottom__container {
+    max-width: 673px;
+  }
+}
+
+@media (max-width: 740px) {
+  .container {
+    max-width: 640px;
+    width: 90%;
   }
   .navbar-bottom, .navbar__search, .navbar__user {
     display: none;
