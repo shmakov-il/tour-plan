@@ -8,9 +8,13 @@ body {
   color: #333333;
 }
 
-body .container {
+.container {
   max-width: 1110px;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -379,6 +383,40 @@ template {
   margin-left: 108px;
 }
 
+.navbar-bottom {
+  background: #0A223D;
+  padding: 31px 0;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu__link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.logo {
+  width: 177px;
+  height: 24px;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,5 +474,53 @@ template {
   line-height: 18px;
   color: #333333;
   margin-left: 18px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+    width: 90%;
+  }
+  .navbar-bottom {
+    padding-top: 22px;
+    padding-bottom: 23px;
+  }
+  .navbar-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .navbar__search {
+    margin-left: auto;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .search__input {
+    max-width: 340px;
+  }
+  .logo {
+    width: 132px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
