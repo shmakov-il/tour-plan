@@ -520,12 +520,15 @@ template {
 }
 
 .hotel-name {
-  margin-top: 4px;
-  margin-bottom: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.hotel-name__title {
+  margin-top: 4px;
+  margin-bottom: 2px;
 }
 
 .hotel-wrapper {
@@ -695,10 +698,50 @@ template {
   }
 }
 
+@media (max-width: 600px) {
+  .rating {
+    display: none;
+  }
+  .offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .hotel-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hotel-wrapper__stars {
+    margin-right: 15px;
+  }
+  .hotel-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .hotel-name__title {
+    margin-top: 8px;
+  }
+  .hotel-info__offer {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+}
+
 @media (max-width: 480px) {
   .logo {
     width: 99px;
     height: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */

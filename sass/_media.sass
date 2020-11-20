@@ -64,7 +64,32 @@
         height: 1px
         background-color: $text-color
 
+@media ( max-width: 600px )
+  .rating
+    display: none
+  .offer
+    order: -1
+  .hotel
+    &-wrapper
+      justify-content: space-between
+      &__stars
+        margin-right: 15px
+    &-name
+      flex-basis: 100%
+      &__title
+        margin-top: 8px
+    &-info
+      &__offer
+        margin-top: 0
+        margin-left: 0
+  .stars
+    flex-basis: auto
+
 @media ( max-width: 480px )
   .logo
     width: 99px
     height: 13px
+
+@media ( max-width: 320px )
+  .container
+    max-width: 280px
