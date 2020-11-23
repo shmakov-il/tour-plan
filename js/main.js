@@ -12,4 +12,10 @@ var mySwiper = new Swiper('.swiper-container', {
     enabled: true,
     onlyInViewport: false,
   },
+  speed: 2000,
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 40,
+    slideShadows: true,
+  },
 })
