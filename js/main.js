@@ -14,8 +14,4 @@ var mySwiper = new Swiper('.swiper-container', {
   },
   speed: 2000,
   effect: 'coverflow',
-  coverflowEffect: {
-    rotate: 40,
-    slideShadows: true,
-  },
 })
