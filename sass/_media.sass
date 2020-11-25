@@ -2,7 +2,7 @@
   .container
     max-width: 960px
   .slider
-    width: 600px
+    width: 586px
   .swiper
     &-slide
       &__image
@@ -13,7 +13,7 @@
   .container
     max-width: 900px
   .slider
-    width: 540px
+    width: 531px
 
 @media ( max-width: 992px )
   .container
@@ -23,15 +23,15 @@
     &-grid
       flex-direction: column
     &__slider
-      margin-bottom: 30px
+      margin-bottom: 20px
     &-right
       flex-direction: row
   .booking
-    width: 340px
+    width: 370px
     &__button
       padding: 13px 78px
   .map
-    width: 340px
+    width: 370px
   .slider
     width: 100%
   .swiper
@@ -57,6 +57,14 @@
   .logo
     width: 132px
     height: 18px
+
+@media ( max-width: 840px )
+  .booking
+    width: 49%
+    &__button
+      padding: 13px 70px
+  .map
+    width: 49%
 
 @media ( max-width: 768px )
   .container
@@ -94,6 +102,8 @@
   .slider
     height: 350px
   .hotel
+    &__slider
+      margin-bottom: 20px
     &-right
       flex-direction: column
       min-height: 450px
@@ -128,6 +138,16 @@
     height: 13px
   .slider
     height: 179px
+    &-button
+      width: 12px
+      height: 12px
+      background-size: 6px
+      &--next
+        right: 12px
+        background-image: url(../img/arrow-next-small.svg)
+      &--prev
+        left: 12px
+        background-image: url(../img/arrow-prev-small.svg)
 
 @media ( max-width: 382px )
   .booking__button
@@ -148,3 +168,14 @@
     &-right
       flex-direction: column
       justify-content: flex-start
+  .slider
+    &-button
+      width: 12px
+      height: 12px
+      background-size: 6px
+      &--next
+        right: 6px
+        background-image: url(../img/arrow-next-small.svg)
+      &--prev
+        left: 6px
+        background-image: url(../img/arrow-prev-small.svg)

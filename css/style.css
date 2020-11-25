@@ -831,7 +831,7 @@ template {
 .map {
   width: 347px;
   height: 213px;
-  background: black;
+  background: rgba(0, 122, 223, 0.48);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -841,7 +841,7 @@ template {
     max-width: 960px;
   }
   .slider {
-    width: 600px;
+    width: 586px;
   }
   .swiper-slide__image {
     height: 100%;
@@ -855,7 +855,7 @@ template {
     max-width: 900px;
   }
   .slider {
-    width: 540px;
+    width: 531px;
   }
 }
 
@@ -871,7 +871,7 @@ template {
             flex-direction: column;
   }
   .hotel__slider {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .hotel-right {
     -webkit-box-orient: horizontal;
@@ -880,13 +880,13 @@ template {
             flex-direction: row;
   }
   .booking {
-    width: 340px;
+    width: 370px;
   }
   .booking__button {
     padding: 13px 78px;
   }
   .map {
-    width: 340px;
+    width: 370px;
   }
   .slider {
     width: 100%;
@@ -915,6 +915,18 @@ template {
   .logo {
     width: 132px;
     height: 18px;
+  }
+}
+
+@media (max-width: 840px) {
+  .booking {
+    width: 49%;
+  }
+  .booking__button {
+    padding: 13px 70px;
+  }
+  .map {
+    width: 49%;
   }
 }
 
@@ -965,6 +977,9 @@ template {
   }
   .slider {
     height: 350px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
   }
   .hotel-right {
     -webkit-box-orient: vertical;
@@ -1023,6 +1038,19 @@ template {
   .slider {
     height: 179px;
   }
+  .slider-button {
+    width: 12px;
+    height: 12px;
+    background-size: 6px;
+  }
+  .slider-button--next {
+    right: 12px;
+    background-image: url(../img/arrow-next-small.svg);
+  }
+  .slider-button--prev {
+    left: 12px;
+    background-image: url(../img/arrow-prev-small.svg);
+  }
 }
 
 @media (max-width: 382px) {
@@ -1053,6 +1081,19 @@ template {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .slider-button {
+    width: 12px;
+    height: 12px;
+    background-size: 6px;
+  }
+  .slider-button--next {
+    right: 6px;
+    background-image: url(../img/arrow-next-small.svg);
+  }
+  .slider-button--prev {
+    left: 6px;
+    background-image: url(../img/arrow-prev-small.svg);
   }
 }
 /*# sourceMappingURL=style.css.map */
