@@ -687,6 +687,10 @@ template {
   line-height: 18px;
 }
 
+.hotel__slider {
+  margin-right: 30px;
+}
+
 .swiper-slide {
   position: relative;
 }
@@ -844,6 +848,8 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  min-height: 100px;
+  background: transparent;
 }
 
 .newsletter::before {

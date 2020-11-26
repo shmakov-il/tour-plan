@@ -10,6 +10,26 @@
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="js/parallax.js"></script>
+    <!-- <script>
+      $(function() {
+        $('.newsletter').parallax({ 
+        imageSrc: '../img/newsletter.jpg',
+        speed: 1,
+      });
+      })
+    </script> -->
+
+    <!-- <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bgscroll.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function () {
+        $('.newsletter').bgscroll({ direction: 'top',
+      bgpositionx: 100,
+    });
+      })
+    </script> -->
     
 </head>
 <body>
@@ -164,7 +184,8 @@
     <!-- /.container -->
   </section>
   <!-- /.hotel -->
-  <section class="newsletter">
+  
+  <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter.jpg" data-speed="0.8">
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title">
         subscribe to our
@@ -176,6 +197,8 @@
       </form>
     </div>
   </section>
+  <!-- /.newsletter -->
+
   <section class="reviews">
     <div class="container">
       <h2 class="reviews__title">What people think about&nbsp;us</h2>
@@ -313,9 +336,12 @@
     <!-- /.container -->
   </section>
   <!-- /.activities -->
+  <div class="parallax-window" data-parallax="scroll" data-image-src="img/newsletter.jpg"></div>
+
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=2dfde585-5eff-4e37-9362-c4d45499bc6f&lang=ru_RU"></script>
   <script src="js/map.js"></script>
+  
 </body>
 </html>
