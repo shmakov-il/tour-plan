@@ -16,7 +16,7 @@
     width: 531px
 
 @media ( max-width: 992px )
-  .container
+  .container, .newsletter-wrapper
     max-width: 760px
     width: 90%
   .hotel
@@ -74,6 +74,10 @@
     &-bottom
       &__container
         max-width: 673px
+  .hotel
+    padding-bottom: 60px
+  .newsletter
+    padding: 92px 0 93px 0
 
 @media ( max-width: 740px)
   .container
@@ -102,6 +106,7 @@
   .slider
     height: 350px
   .hotel
+    padding-bottom: 60px
     &__slider
       margin-bottom: 20px
     &-right
@@ -111,6 +116,14 @@
     width: 100%
   .map
     width: 100%
+  .newsletter
+    padding: 76px 0 83px 0
+    &-title
+      margin-bottom: 20px
+    &-wrapper
+      flex-direction: column
+      align-items: flex-start
+
 @media ( max-width: 600px )
   .rating
     display: none
@@ -148,7 +161,17 @@
       &--prev
         left: 12px
         background-image: url(../img/arrow-prev-small.svg)
-
+  .newsletter
+    &-title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 37px
+    &__strong
+      font-size: 30px
+      line-height: 38px
+    &__subscribe
+      width: 280px
 @media ( max-width: 382px )
   .booking__button
     padding: 13px 48px
@@ -165,9 +188,11 @@
     height: 173px
     margin-top: 20px
   .hotel
+    padding-bottom: 40px
     &-right
       flex-direction: column
       justify-content: flex-start
+      min-height: 402px
   .slider
     &-button
       width: 12px
@@ -179,3 +204,5 @@
       &--prev
         left: 6px
         background-image: url(../img/arrow-prev-small.svg)
+  .newsletter__strong
+    margin-top: 5px

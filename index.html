@@ -94,35 +94,32 @@
         <!-- /.hotel-info__rating -->
       </div>
       <div class="hotel-grid">
-        <div class="slider hotel__slider">
           <!-- Slider main container -->
-          <div class="swiper-container">
+          <div class="swiper-container hotel-slider hotel__slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
+              <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide-1.jpg" alt="Slide">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide-2.jpg" alt="Slide">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide-3.jpg" alt="Slide">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide-4.jpg" alt="Slide">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide-5.jpg" alt="Slide">
               </div>
             </div>         
             <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button--prev"></button>
-            <button class="slider-button slider-button--next"></button>
+            <button class="hotel-slider__button hotel-slider__button--prev"></button>
+            <button class="hotel-slider__button hotel-slider__button--next"></button>
             <!-- /.swiper-container -->
           </div>
-        </div>
-        <!-- /.slider -->
         <div class="hotel-right">
           <div class="booking">
             <div class="booking__info">
@@ -156,7 +153,6 @@
             <button class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
-          
           <div class="map">
             <div id="map" style="width: 100%; height: 100%"></div>
           </div>
@@ -168,6 +164,116 @@
     <!-- /.container -->
   </section>
   <!-- /.hotel -->
+  <section class="newsletter">
+    <div class="newsletter-wrapper">
+      <h2 class="newsletter-title">
+        subscribe to our
+        <span class="newsletter__strong">Newsletter</span>
+      </h2>
+      <form action="#" class="subscribe newsletter__subscribe">
+        <input type="text" class="subscribe__input" placeholder="Your email address">
+        <button class="subscribe__button">Send</button>
+      </form>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">What people think about us</h2>
+      <div class="swiper-container reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Megan Fox</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend.</p>
+            </div>
+            <!-- /.swiper-slide__item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar-2.jpg" alt="Photo:Tuan Li" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Tuan Li</h3>
+                <span class="reviews-slider__date">Stayed 12 Sep, 2018</span>
+                <div class="reviews-slider__rating">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam iste nihil ad at, quis labore odit error deserunt numquam aliquid unde nostrum, nesciunt doloribus rerum dignissimos dolore, perferendis architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sapiente praesentium quam natus, ut voluptate at deserunt cupiditate repudiandae quasi accusamus, ipsum sequi iure? Sit, minima alias. Recusandae, quia possimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus vitae dolor dolores! Exercitationem officiis quisquam sit qui expedita est debitis architecto corporis aperiam vel illo ad, non, minima impedit sapiente.</p>
+            </div>
+            <!-- /.swiper-slide__item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar-3.jpg" alt="Photo: Joseph Dawson" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Joseph Dawson</h3>
+                <span class="reviews-slider__date">Stayed 11 Dec, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius voluptatibus officia laudantium repellendus sed sapiente iure cumque dolorem distinctio similique officiis ullam facere, placeat laborum et molestias vero porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque id quis iusto, repellendus esse, cupiditate doloremque ut officia delectus reiciendis explicabo nesciunt dolor alias? Dolor magni totam ipsum. Eveniet.</p>
+            </div>
+            <!-- /.swiper-slide__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar-4.jpg" alt="Photo: Itan Houk" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Itan Houk</h3>
+                <span class="reviews-slider__date">Stayed 30 Apr, 2017</span>
+                <div class="reviews-slider__rating">
+                  <img class="hotel__stars" src="img/star.svg" alt="Star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis pariatur id nemo est unde praesentium modi odit! Odit, sapiente reiciendis, incidunt ad nesciunt commodi sequi itaque rerum, tempore distinctio libero.</p>
+            </div>
+            <!-- /.swiper-slide__item -->
+          </div>
+          <!-- /.swiper-slide -->
+
+          
+        </div>
+        <!-- /.swiper-wrapper -->
+        <button class="reviews-slider__button reviews-slider__button--prev"></button>
+        <button class="reviews-slider__button reviews-slider__button--next"></button>
+      </div>
+      <!-- /.reviews-slider -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.reviews -->
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=2dfde585-5eff-4e37-9362-c4d45499bc6f&lang=ru_RU"
