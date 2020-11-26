@@ -948,6 +948,10 @@ template {
   margin-bottom: 70px;
 }
 
+.reviews-slider__stars {
+  margin-left: 2.67px;
+}
+
 .reviews-slider__button {
   position: absolute;
   top: 134px;
