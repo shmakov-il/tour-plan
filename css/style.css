@@ -1070,6 +1070,97 @@ template {
   max-width: 537px;
 }
 
+.activities {
+  padding-top: 60px;
+  padding-bottom: 98px;
+}
+
+.activities__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 57px;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  padding: 24px 26px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
+.card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border: none;
+  padding: 7px 22px 7px 21px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1082,6 +1173,10 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .card {
+    width: 230px;
+    height: 230px;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -1090,6 +1185,10 @@ template {
   }
   .hotel__slider {
     width: 531px;
+  }
+  .card {
+    width: 215px;
+    height: 215px;
   }
 }
 
@@ -1151,6 +1250,17 @@ template {
   .reviews-slider__item {
     max-width: 579px;
   }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 48%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 840px) {
@@ -1178,6 +1288,13 @@ template {
   }
   .newsletter {
     padding: 92px 0 93px 0;
+  }
+  .card {
+    width: 339px;
+    height: 255px;
+  }
+  .reviews {
+    padding-bottom: 60px;
   }
 }
 
@@ -1277,6 +1394,19 @@ template {
             transform: translate(50%, 0);
     margin-right: -90px;
   }
+  .card {
+    width: 48%;
+    height: 255px;
+  }
+}
+
+@media (max-width: 626px) {
+  .card {
+    width: 100%;
+    height: 255px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1347,6 +1477,19 @@ template {
   .newsletter__subscribe {
     width: 280px;
   }
+  .card {
+    width: 100%;
+    height: 255px;
+  }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 36px;
+  }
 }
 
 @media (max-width: 382px) {
@@ -1361,6 +1504,9 @@ template {
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
+  }
+  .reviews {
+    padding-bottom: 50px;
   }
   .map {
     height: 173px;
