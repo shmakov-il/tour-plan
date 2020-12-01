@@ -32,3 +32,9 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     onlyInViewport: false,
   },
 })
+
+var menuButton = document.querySelector('.button-menu');
+menuButton.addEventListener('click', function () {
+  console.log('clicked')
+  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible')
+} )
