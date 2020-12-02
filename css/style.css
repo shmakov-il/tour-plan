@@ -2660,7 +2660,7 @@ template {
   }
 }
 
-@media (max-width: 736px) {
+@media (max-width: 736px) and (orientation: landscape) {
   .navbar-bottom--visible {
     overflow: auto;
   }
