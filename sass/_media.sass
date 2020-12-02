@@ -575,6 +575,17 @@
     &-price
       margin-bottom: 10px
 
+@media ( max-width: 331px )
+  .footer
+    &__social
+      &-network
+        flex-wrap: wrap
+    &__title
+      &--inline
+        margin-bottom: 20px
+    &-links
+      margin-bottom: -15px
+
 @media ( max-width: 320px )
   .container
     max-width: 280px
@@ -623,3 +634,10 @@
     &__title
       &--inline
         margin-bottom: 20px
+
+// медиа-запрос для прокрутки меню из бургера
+@media ( max-width: 736px )
+  .navbar
+    &-bottom
+      &--visible
+        overflow: auto

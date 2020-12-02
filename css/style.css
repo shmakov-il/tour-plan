@@ -2575,6 +2575,19 @@ template {
   }
 }
 
+@media (max-width: 331px) {
+  .footer__social-network {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__title--inline {
+    margin-bottom: 20px;
+  }
+  .footer-links {
+    margin-bottom: -15px;
+  }
+}
+
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
@@ -2644,6 +2657,12 @@ template {
   }
   .footer__title--inline {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 736px) {
+  .navbar-bottom--visible {
+    overflow: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
