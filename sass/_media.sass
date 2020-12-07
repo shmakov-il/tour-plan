@@ -419,6 +419,9 @@
     &__text
       &_top
         margin-top: 35px
+    &__input
+      &-group
+        order: -2
   .modal
     &__dialog
       padding-left: 55px
@@ -561,7 +564,14 @@
     &__title
       font-size: 20px
       margin-bottom: 20px
-
+  .modal
+    &__dialog
+      padding-left: 20px
+      padding-right: 20px
+  .footer
+    &__input
+      &-group
+        flex-basis: 100%
 @media ( max-width: 419px )
   .packages
     grid-template-rows: 750px 500px 500px 500px 500px

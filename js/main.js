@@ -40,10 +40,13 @@ menuButton.addEventListener('click', function () {
   console.log('clicked')
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible')
 });
+
 var modalButton = $('[data-toggle=modal]');
 var closeModalButton = $('.modal__close');
+var closeModalButtonAll = $('.modal__overlay');
 modalButton.on('click', openModal);
 closeModalButton.on('click', closeModal);
+closeModalButtonAll.on('click', closeModal);
 
 function openModal () {
   var modalOverlay = $('.modal__overlay');
@@ -69,6 +72,31 @@ $(document).on('keydown', function (e) {
   }
 });
 
+// обработка форм
+$('.form').each( function() {
+  $( this ).validate( {
+    errorClass: "invalid",
+    messages: {
+    name: {
+      required: "Please enter your name",
+      minlength: "Short name",
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone: "Please enter number phone",
+    searchme: "Please fill out the form",
+    bookingName: {
+      required: "Please enter your name",
+      minlength: "Short name",
+    },
+    bookingPhone: "Please enter number phone",
+    bookingSubscribe: "Please enter your email",
+    subscribe: "Please enter your email",
+  }
+  })
 });
-
+$('.telphone').mask('+7 (000) 000-00-00');
+});
 
