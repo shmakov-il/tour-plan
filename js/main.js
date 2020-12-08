@@ -96,13 +96,17 @@ $('.form').each( function() {
     },
     bookingPhone: {
       required: "Please enter number phone",
-      minlength: "Required format +7 (xxx) xxx xx xx"
+      minlength: "Required format +7 (xxx) xxx xx xx",
     },
     bookingSubscribe: "Please enter your email",
-    subscribe: "Please enter your email",
+    subscribe: {
+      required: "Please enter your email",
+      minlength: "error"
+    },
   }
   })
 });
 $('.telphone').mask('+7 (000) 000-00-00');
+AOS.init();
 });
 
