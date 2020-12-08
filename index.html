@@ -644,7 +644,7 @@
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
             </div>
             <div class="footer__input-group">
-              <input type="text" class="input footer__input telphone" placeholder="Phone Number*" name="phone" required>
+              <input type="text" class="input footer__input telphone" placeholder="Phone Number*" name="phone" required minlength="18">
             </div>
             <textarea class="footer__textarea" placeholder="Message" name="message"></textarea>
             <button class="button footer__button">Send</button>
@@ -680,12 +680,20 @@
       </a>
       <h3 class="modal__title modal__title--mb4">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="bookingName" required minlength="2">
-        <input type="text" class="input modal__input telphone" placeholder="Phone Number*" name="bookingPhone" required>
-        <input type="text" class="input modal__input" placeholder="Email*" name="bookingSubscribe" required>
+        <div class="check">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="bookingName" required minlength="2">
+        </div>
+        <div class="check">
+          <input type="text" class="input modal__input telphone" placeholder="Phone Number*" name="bookingPhone" required
+            minlength="18">
+        </div>
+        <div class="check">
+          <input type="text" class="input modal__input boxmail" placeholder="Email*" name="bookingSubscribe" required>
+        </div>
         <textarea class="modal__textarea" placeholder="Message" name="bookingMessage"></textarea>
         <button class="button modal__button">Send</button>
         <span class="modal__info">* Required Fields</span>
+          
       </form>
 
     </div>

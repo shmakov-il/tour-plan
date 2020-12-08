@@ -85,13 +85,19 @@ $('.form').each( function() {
       required: "We need your email address to contact you",
       email: "Your email address must be in the format of name@domain.com"
     },
-    phone: "Please enter number phone",
+    phone: {
+      required: "Please enter number phone",
+      minlength: "Required format +7 (xxx) xxx xx xx",
+    },
     searchme: "Please fill out the form",
     bookingName: {
       required: "Please enter your name",
       minlength: "Short name",
     },
-    bookingPhone: "Please enter number phone",
+    bookingPhone: {
+      required: "Please enter number phone",
+      minlength: "Required format +7 (xxx) xxx xx xx"
+    },
     bookingSubscribe: "Please enter your email",
     subscribe: "Please enter your email",
   }

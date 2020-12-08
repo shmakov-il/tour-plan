@@ -75,8 +75,7 @@ button {
 #phone-error {
   margin-left: 23px;
   position: relative;
-  top: -32px;
-  background-color: #ffffff;
+  top: 0px;
 }
 
 #bookingName-error,
@@ -88,11 +87,14 @@ button {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  position: absolute;
+  left: 0px;
+  top: 64px;
 }
 
 #searchme-error {
   position: absolute;
-  right: 190px;
+  right: 200px;
   top: 12px;
   background-color: #F5FAFE;
   font-family: 'Mulish', sans-serif;
@@ -100,6 +102,10 @@ button {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+}
+
+.check {
+  position: relative;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1860,6 +1866,7 @@ template {
 @media (max-width: 1440px) {
   .modal__dialog {
     max-width: 478px;
+    width: 80%;
   }
 }
 
@@ -2056,6 +2063,7 @@ template {
   .modal__dialog {
     padding-left: 55px;
     padding-right: 55px;
+    width: 80%;
   }
 }
 
